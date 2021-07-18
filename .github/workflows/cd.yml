@@ -15,3 +15,5 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           image-name: react-ci-cd
+          build-context: ./
+          custom-args: --build-arg workdir=/
