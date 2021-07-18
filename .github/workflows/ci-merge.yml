@@ -15,8 +15,8 @@ jobs:
       - if: ${{ github.event.workflow_run.conclusion == 'success' }}
         uses: reitermarkus/automerge@v1.5.2
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          merge-method: merge
+        token: ${{ secrets.GITHUB_TOKEN }}
+        merge-method: merge
 #      - if: ${{ github.event.workflow_run.conclusion == 'success' }}
 #        name: Merge Pull Request
 #        uses: juliangruber/merge-pull-request-action@v1
