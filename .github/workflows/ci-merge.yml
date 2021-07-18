@@ -8,12 +8,14 @@ on:
       - 'React CI'
 
 jobs:
-  merge-me:
+  merge-pr:
     name: Merge PR
     runs-on: ubuntu-latest
     steps:
       - if: ${{ github.event.workflow_run.conclusion == 'success' }}
-        name: Merge PR
-        uses: ridedott/merge-me-action@v2
+        name: Merge Pull Request
+        uses: juliangruber/merge-pull-request-action@v1
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          number: 1
+          method: merge
