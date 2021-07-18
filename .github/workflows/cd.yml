@@ -1,4 +1,4 @@
-name: React CD Build
+name: React CD
 
 on:
   push:
