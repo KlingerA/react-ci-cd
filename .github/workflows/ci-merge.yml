@@ -16,4 +16,4 @@ jobs:
       - uses: reitermarkus/automerge@v1
         with:
           token: ${{ secrets.AUTOMERGE_TOKEN }}
-          merge-method: rebase
+          merge-method: merge
