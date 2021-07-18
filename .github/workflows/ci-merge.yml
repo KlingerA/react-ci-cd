@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - if: ${{ github.event.workflow_run.conclusion == 'success' }}
-        uses: reitermarkus/automerge@v2
+        uses: reitermarkus/automerge@v1.5.2
         with:
           token: ${{ secrets.MY_GITHUB_TOKEN }}
           merge-method: merge
