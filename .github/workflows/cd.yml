@@ -7,11 +7,16 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [ 14.x ]
     if: github.ref == 'refs/heads/master'
     steps:
       - uses: actions/checkout@v2
-      - name: Build and publish Docker image
-        uses: VaultVulp/gp-docker-action@1.1.8
+      - name: Install and build
+        run: npm install && npm run build
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          image-name: react-ci-cd
+          branch: release/1.0
+          folder: build
