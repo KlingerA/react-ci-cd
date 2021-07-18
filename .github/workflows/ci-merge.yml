@@ -15,7 +15,5 @@ jobs:
     steps:
       - uses: reitermarkus/automerge@v1
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.AUTOMERGE_TOKEN }}
           merge-method: rebase
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
