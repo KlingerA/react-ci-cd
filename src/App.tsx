@@ -9,7 +9,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <h3>CI/CD React Test</h3>
         <p>
-          React test for continuous integraation and continuous delivery/deployment.
+          React test for continuous integration and continuous delivery/deployment.
         </p>
       </header>
     </div>
