@@ -19,13 +19,3 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ALLOWED_UPDATE: any
           MERGE_METHOD: rebase
-#      - uses: ridedott/merge-me-action@v2
-#        with:
-#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#          # GITHUB_TOKEN: ${{ secrets.AUTOMERGE_TOKEN }}
-#          MERGE_METHOD: MERGE
-#          ENABLED_FOR_MANUAL_CHANGES: 'true'
-#      - uses: reitermarkus/automerge@v1
-#        with:
-#          token: ${{ secrets.AUTOMERGE_TOKEN }}
-#          merge-method: merge
