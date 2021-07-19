@@ -10,7 +10,6 @@ function App() {
         <h3>CI/CD React Test</h3>
         <p>
           React test for continuous integration and continuous delivery/deployment.
-
         </p>
       </header>
     </div>
